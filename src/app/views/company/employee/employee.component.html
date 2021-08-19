@@ -1,0 +1,11 @@
+<div class="form-group">
+  <label>Employee</label>
+  <input
+    type="text"
+    class="form-control"
+    name="tempData"
+    [(ngModel)]="childData"
+    #data
+    (change)="addData(data.value)"
+  />
+</div>

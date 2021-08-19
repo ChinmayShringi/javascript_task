@@ -1,0 +1,22 @@
+<div class="card m-5" style="width: 18rem">
+  <div class="card-body">
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Company</label>
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Enter "
+          name="company"
+          [(ngModel)]="companyData"
+        />
+        <small class="form-text text-muted"
+          >This is parent (Company input)</small
+        >
+      </div>
+      <!--  -->
+      <app-employee (newItemEvent)="addData($event)"></app-employee>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
